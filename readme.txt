@@ -3,7 +3,7 @@ Contributors: Kautuk Bhatnagar
 
 Tags: republish, republishing, old post promoter, old posts, old post, post promoter
 Requires at least: 4.0
-Tested up to: 4.8
+Tested up to: 4.8.1
 License: GPLv2 or later
 
 Republish old posts automatically by resetting the date to the current date. Promote old posts to users that haven't seen them.
@@ -27,12 +27,6 @@ Why would you want to do this? Here are a few reasons:
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Adjust the options as needed
 
-== Screenshots ==
-
-1. Set the time that should elapse before posts are republished. Options in red are available only in the [pro version](https://infolific.com/technology/software-worth-using/republish-old-posts-for-wordpress/#pro-version).
-2. Add a randomness interval to when posts are republished. Options in red are available only in the [pro version](https://infolific.com/technology/software-worth-using/republish-old-posts-for-wordpress/#pro-version).
-3. Determine how old posts should be before they're considered for republishing. Options in red are available only in the [pro version](https://infolific.com/technology/software-worth-using/republish-old-posts-for-wordpress/#pro-version).
-4. Ability to specify a post-level, custom field to exclude posts from ever being republished. This option available only in the [pro version](https://infolific.com/technology/software-worth-using/republish-old-posts-for-wordpress/#pro-version).
 
 == Frequently Asked Questions ==
 
@@ -49,71 +43,3 @@ Yes permalinks with dates would be affected. This plugin shouldn't be used if yo
 = Does this work with WPMU? =
 
 Yes it does.
-
-
-== Changelog ==
-
-= 1.17 =
-* All Versions: Added cache clearing code for the WP Fastest Cache plugin.
-* Free Version: Synchronizing plugin version number with pro version.
-
-= 1.15 =
-* All Versions: Security issue (cross-site scripting) fix applied.
-
-= 1.14 =
-* Pro Version: Added option to trigger a publish event within WordPress when a post is republished. If you want to "tell" other plugins that a post has been republished, check this option.
-
-= 1.13 =
-* Pro Version: Added 28 days as an option for the minimum post age.
-
-= 1.12 =
-* Pro Version: Added 28 days as an option for the minimum interval.
-
-= 1.11 =
-* All Versions: Fixed issue where posts wouldn't be republished when plugin first installed.
-
-= 1.10 =
-* All Versions: Fixed time zone issue that sometimes resulted in republished posts having a future time.
-* Pro version: Added random interval of 0 for better control over publishing time.
-* Pro version: Added age values of 6 and 12 hours to allow for new posts to be republished.
-
-= 1.9 =
-* Pro version: Changed behavior of phrase matching filter. Now examines post title and not the post content.
-
-= 1.8 =
-* Pro version: Can now specify posts to republish by a word that they contain e.g. if set to "word" only posts containing word, keyword, words, or other similar matches will be considered for republishing.
-
-= 1.7 =
-* Pro version: Added options for republishing posts that are just 1 day, 1 week, or 2 weeks old.
-
-= 1.6 =
-* Pro version: Can now choose to republish a random old post rather than the oldest post.
-
-= 1.5 =
-* Pro version: Added 5 minute minimum interval option.
-* Pro version: Added 5, 15, and 30 minute randomness interval options.
-
-= 1.4 =
-* Free version: Bug fix to SQL.
-
-= 1.3 =
-* All versions: Code cleanup. Conforming with WordPress coding standards.
-* All versions: Tweaks to admin interface.
-* Pro version: Added an option to force a post to be republished when it is the oldest post of those that otherwise match the criteria you specified.
-
-= 1.2 =
-* All versions: Forcing SVN refresh as last commit doesn't seem to have worked.
-
-= 1.1 =
-* All versions: Tweaks to documentation including the readme.txt.
-* All versions: Revised admin interface to provide more instruction and supporting information.
-* Pro version: Added ability to filter out any posts of your choosing so that they are never republished. This provides more fine-grained control than just selecting a category.
-* Pro version: Additional minimum intervals added: 15 minutes, 30 minutes, 1 hour, 2 days, 3 days, and 7 days.
-* Pro version: Additional randomness intervals added: 12 hours and 24 hours.
-* Pro version: Additional post age options added: 120 days, 240 days, 365 days, 730 days.
-
-= 1.0 =
-* Initial release of fork of now defunct and unavailable Old Post Promoter plugin.
-* Removed link injection from original plugin i.e. this plugin will not insert any links.
-* Removed Twitter functionality from original plugin. This plugin does one and only one thing: republish old posts.
-* A number of bugs fixed so running with "debug messages on" shouldn't result in any messages.
